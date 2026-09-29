@@ -61,6 +61,7 @@ def main():
             [2, 'E. Inventory and serialization', 25],
             [2, 'F. Source review', 29],
             [1, 'S1–S6. Clarifications and paired-outcome accounting', 33],
+            [2, 'S6. Paper references and file availability', 37],
         ])
         sanitized(combined, 'Extended Methods and Results — When Valid Evidence Goes Unused in Oncology Agents')
         destination = ROOT / 'extended_methods_and_results.pdf'

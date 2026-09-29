@@ -237,25 +237,104 @@ thirty-pair independent review was discontinued without completed judgments. No
 workflow study measured review time or decision quality. Preservation and source
 interpretation remain separate evaluation targets.
 
-\section{Related-work navigation and reproducibility}
+\clearpage
+\section{Finding material cited in the paper}
 
-Related work appears in Section B.6 (combined PDF page 12), covering evidence
-use and revision, qualified matching and retrieval, and record preservation
-and workflow scope. The bibliography is on PDF page 2. Section S1 summarizes
-how the studies relate to one another.
+This guide refers to the 20-page submitted paper. Its condensed appendices and
+this supplement's expanded appendices use different subsection and table
+numbers. All page numbers below are PDF viewer pages in the combined
+\emph{Extended Methods and Results}. On PDF pages 2 to 32, subtract eight from
+the printed page number. Tables in addendum sections S1 and S2 have their own
+numbering.
 
-The repository provides \texttt{data/paired\_outcomes.csv} and
-\texttt{source/analyze.py} to reproduce the S2 counts. Each row is a case and
-repetition with fresh and diagnostic-repair terminal labels. The file contains
-90 pairs (180 outputs) and does not include licensed candidate text or full
-responses. Readers can recompute counts from these labels, but independently
-regrading responses would require the underlying records and outputs. Original
-response scoring is described in archival D.2 to D.3.
+\subsection*{Sections and tables}
+{\small
+\begin{tabularx}{\linewidth}{@{}p{0.38\linewidth}Xr@{}}
+\toprule
+Reference in the paper & Expanded supplement & PDF pages\\
+\midrule
+Table 1: protocol roles and budgets & S1 overview; C, Table 14; E.1 & 33, 13, 25\\
+B, Table 3: samples and limits & B.1, B.5; study settings in C to E & 7, 10 to 12\\
+Introduction; A, Table 2: typed scope audit & A.4, Table 4 & 4 to 5\\
+Section 2; B: shared methods & B.1 to B.5 & 7 to 12\\
+Section 3; C.1, Table 4: fixed exposure & C.1, Table 15; outcomes in Table 17 & 13 to 15\\
+Section 4.3; C.2, Table 4: live retry & C.2, Tables 16 and 17 & 14 to 15\\
+C.3: initial prompts and messages & C.4 & 19 to 20\\
+Section 4; D.1, Table 5: common prompt and conditions & D.1, Table 22 & 20 to 21\\
+D.2: design, scoring and statistics & D.2 & 21 to 22\\
+D.3, Tables 6 and 7: outcomes and contrasts & D.3, Tables 23 and 24 & 22 to 23\\
+D: detailed resource accounting & D.4, Table 26 & 24\\
+Section 5.1; E.1: inventory task & E.1 to E.2, Tables 27 to 29 & 25 to 26\\
+E.2, Table 8: saved-pool serialization & E.4, Tables 31 and 32; replay checks & 28 to 29\\
+E.3: controls and omissions & E.3 to E.5 & 27 to 29\\
+F, Table 9: joint judgments & F.3, Table 35, columns J & 31\\
+F, Table 10: W04 observations & F.3, W04 discussion & 31\\
+F: source review and its limits & F.1 to F.4, Tables 33 to 36 & 29 to 32\\
+\bottomrule
+\end{tabularx}
+}
 
-\texttt{source/build.py} compiles this addendum and the navigation cover, combines
-them with the unchanged archival body, clears identifying PDF metadata, and
-checks rendered page equality for that body. The unchanged original supplement
-is retained in \texttt{archive/}. Verification records include artifact hashes
-and outcome-accounting checks. The original primary analysis remains the basis for inference; this addendum
-explains its scope and provides a descriptive reanalysis.
+The initial system instruction, checklist core, and feedback tail appear in C.4
+(PDF pages 19 to 20). The exact common system instruction and final command
+appear in D.1 (PDF page 21). These passages let readers compare the disclosed
+instructions even though the original prompt JSON files are not included.
+Related work is in B.6 (PDF page 12), and the bibliography is on PDF page 2.
+
+\subsection*{What the public data reproduce}
+\texttt{data/paired\_outcomes.csv} contains 90 fresh/diagnostic-repair pairs
+(180 outputs): 64 co-alteration pairs and 26 sibling-disease pairs.
+\texttt{source/analyze.py} recomputes the S2 counts. The CSV covers two of the
+five common-prompt conditions, whose full study comprised 450 outputs.
+It omits variant-cluster assignments, the other conditions, candidate records,
+and full responses. It therefore does not support independent response scoring,
+reconstruction of all five conditions, or reproduction of the reported
+variant-cluster bootstrap intervals. Original scoring and statistical methods
+are described in D.2 to D.3.
+
+\clearpage
+\subsection*{Files and documents cited in the paper}
+
+The paths in the paper and original Appendix B.5 refer to the research workspace
+used for the experiments. Original Table 13 is a map of that workspace, not this
+repository. The original experiment directories, code, and execution records are
+not included here. The passages below explain the methods. Running the original experiments would
+require the original code and inputs.
+
+{\small
+\begin{tabularx}{\linewidth}{@{}p{0.47\linewidth}X@{}}
+\toprule
+Cited file or document & Description available in this PDF\\
+\midrule
+\nolinkurl{versions/v14-full-paper-revision/README.md};
+\nolinkurl{src/common.py}; \nolinkurl{src/agents.py}
+& B.1 to B.5, pages 7 to 12: corpus, eligibility, scoring and execution. Original README and code are not included.\\[4pt]
+\nolinkurl{analysis_inputs/prompt_material_exact.json}
+& C.4, pages 19 to 20: disclosed initial instruction and feedback text. Original JSON is not included.\\[4pt]
+V40 \nolinkurl{src/study.py}; V38 E1 \nolinkurl{src/runner.py} and \nolinkurl{src/feedback.py}
+& C.1 to C.2 and C.4, pages 13 to 15 and 19 to 20: repair protocols and message assembly. Original code is not included.\\[4pt]
+\nolinkurl{analysis_inputs/v41_public_prompt_contract.json}
+& D.1, pages 20 to 21: exact common system instruction and final command. The full JSON, schema and request hashes are not included as files.\\[4pt]
+\nolinkurl{versions/v41-repair-history-control/}
+& D.1 to D.4, pages 20 to 24: study design and aggregate results. Original experiment directory is not included.\\[4pt]
+Other directories, execution plans, timing files and per-run scores listed in B.5
+& B.5, pages 10 to 12, and the study appendices. The original files and complete per-run results are not included.\\[4pt]
+Saved-pool replay code and inputs listed in B.5
+& E.4, pages 28 to 29: procedure and reported verification. Executable replay and original inputs are not included.\\[4pt]
+Companion technical report
+& A, C and F describe related studies and review scope. The separate report and its additional results are not included.\\[4pt]
+Signed reader submissions and source-bearing review materials
+& F.1 to F.4, pages 29 to 32: methods and reported judgments. Underlying restricted materials are not included.\\
+\bottomrule
+\end{tabularx}
+}
+
+\subsection*{Building the public PDFs}
+\texttt{source/build.py} compiles the cover and addendum, combines them with the
+original bibliography and appendices, and verifies that the original pages have
+identical text and rendering. It clears identifying PDF metadata and records
+checks and artifact hashes in \texttt{data/verification.json}. The original
+supplement is retained in \texttt{archive/}. The build requires Python 3,
+PyMuPDF, and \texttt{pdflatex}; it does not require the unavailable experiment
+files, licensed candidate text, full transcripts, or private reader forms.
+The README lists the commands and links to all public data and source files.
 \end{document}
