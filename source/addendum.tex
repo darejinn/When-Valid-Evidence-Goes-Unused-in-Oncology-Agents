@@ -13,21 +13,23 @@
 When Valid Evidence Goes Unused in Oncology Agents
 \end{center}
 
-This addendum clarifies the submitted study and adds a post hoc descriptive
-reaggregation of existing terminal outcomes. No new model generations were run.
-Original scores, primary contrasts, and inferential designations are unchanged.
-The archival bibliography and Appendices A--F remain available in the same PDF.
+This addendum explains the submitted study and summarizes existing terminal
+outcomes in a post hoc descriptive analysis. We ran no new model generations.
+Original scores, primary contrasts, and the status of primary and exploratory
+analyses are unchanged. The original bibliography and Appendices A to F are
+included in the same PDF.
 
 \section{Study map and endpoint definitions}
 
-The central common-prompt result concerns valid nonempty inventories under
-different supplied contexts. The inventory replay is a separate analysis of
-completeness on saved search paths. The studies should not be pooled as
-independent replications or treated as one progressively improved intervention.
+The common-prompt study compares valid nonempty inventories under different
+supplied contexts. A separate inventory replay measures completeness on saved
+search paths. Case reuse and protocol differences limit comparisons across
+studies. They cannot be pooled as independent replications or read as successive
+improvements to a single intervention.
 
 \begin{table}[h!]
 \small
-\caption{Study relationships. Case reuse and protocol differences constrain comparisons across rows. Detailed specifications remain in archival Appendices C--E.}
+\caption{Study relationships. Case reuse and protocol differences constrain comparisons across rows. Detailed specifications remain in archival Appendices C to E.}
 \begin{tabularx}{\linewidth}{@{}p{0.23\linewidth}XX@{}}
 \toprule
 Study & Cases and interaction & Role in the evidence\\
@@ -54,11 +56,11 @@ included in the final inventory. The 43/64 valid repair inventories and the
 
 \section{Paired outcomes and exploratory heterogeneity}
 
-We paired fresh and diagnostic-repair outputs by case and repetition index.
-These are separate generations, not before-and-after measurements of one
-trajectory; a shared repetition index does not imply a shared model random seed.
-This descriptive accounting supplements the original analysis, which averages
-repetitions within cases before variant-cluster resampling.
+We paired fresh and diagnostic-repair outputs by case and repetition index. Each
+pair consists of separate generations. It is not a before-and-after measurement
+of one trajectory, and the shared repetition index does not imply a shared model
+random seed. This descriptive summary supplements the original analysis, which
+averages repetitions within cases before variant-cluster resampling.
 
 \begin{table}[h!]
 \centering\small
@@ -78,11 +80,11 @@ Total pairs & & 64 & 26\\
 \end{tabular}
 \end{table}
 
-The co-alteration difference of eleven valid inventories comprises thirteen
+The difference of eleven valid co-alteration inventories comes from thirteen
 pairs favoring fresh and two favoring repair. Eight pairs abstain in both
 conditions. Thus, not all 21 repair abstentions correspond to a successful fresh
-output. Fresh also produces two invalid affirmative answers, both blocked by
-the shared checker. Higher valid yield does not establish a uniform safety
+output. Fresh also produces two invalid affirmative answers, both blocked by the
+shared checker. Higher valid yield does not establish a uniform safety
 advantage. Attempted invalid answers must remain separate from released errors.
 
 Sibling disease shows a larger exploratory difference: fresh 23/26 versus
@@ -101,9 +103,9 @@ different units and should not be interchanged.
 
 \section{Generated explanations and submitted actions}
 
-The structured action and claims determine the score. The submitted explanation
-can disagree with that action. A selected author-side AI inspection identified
-the following observations in diagnostic-repair abstentions:
+The score depends on the structured action and claims, which can disagree with
+the submitted explanation. In an AI-assisted inspection, the authors selected
+the following examples from diagnostic-repair abstentions:
 
 \begin{itemize}
 \item In co-alteration case CQ001, repetition one, the explanation ends by
@@ -117,32 +119,32 @@ eligibility but raises concerns about implicit treatment-population requirements
 that are not encoded in the inventory predicate.
 \end{itemize}
 
-These examples distinguish failure to identify eligibility from failure to
-submit candidates whose eligibility the explanation acknowledges. They also
-distinguish adherence to an encoded inventory task from caution about broader
-clinical or source-level interpretation. The latter is not, by itself, evidence
-of inappropriate clinical caution.
+In these examples, the explanation acknowledges eligibility even though the
+action omits the candidates. A response can also question the clinical or
+source-level interpretation of a candidate that meets the encoded inventory
+rules. Such caution is not necessarily clinically inappropriate.
 
-The examples were selected after outcome inspection. They are not a completed
-qualitative census, do not estimate category frequencies, and do not reveal an
-internal causal mechanism. The \texttt{reasoning} field is generated output text,
-not an observation of hidden reasoning. Its inconsistency with the action also
-does not establish a causal effect of output-field order.
+We selected these examples after inspecting outcomes and have not completed a
+qualitative census or estimated category frequencies. The examples do not
+establish an internal causal mechanism. The \texttt{reasoning} field contains
+generated text; it does not expose hidden reasoning. Disagreement between that
+text and the action does not establish that output-field order caused the
+disagreement.
 
 A systematic follow-up audit should separate scope misclassification, added
 requirements, explicit caution after rejection, and final-explanation/action
 disagreement, retaining an unresolved category. There are 43 diagnostic-repair
-abstentions across both positive strata (21 co-alteration and 22 sibling disease).
-Their corresponding fresh outputs provide useful comparators; all 180 fresh
-and diagnostic outputs would additionally cover successful submissions.
-No category-frequency result from such an audit is claimed here.
+abstentions across both positive strata (21 co-alteration and 22 sibling
+disease). An audit could compare these abstentions with their paired fresh
+outputs, or cover all 180 fresh and diagnostic outputs to include successful
+submissions. We have not completed that audit or estimated category frequencies.
 
 Existing audits have different targets. Archival Section C reports a 237-item
-enriched AI-reviewed sample from initial fixed exposure and earlier pilot/crossed
-explanation audits. Its 211-item live-retry packet is unrated. Section E.5 reports
-an inventory-task qualitative sample and a post hoc census of ten failed
-inventories. Those studies do not constitute an audit of the common-prompt
-21 co-alteration abstentions.
+enriched AI-reviewed sample from initial fixed exposure and earlier
+pilot/crossed explanation audits. The 211 live-retry items prepared for review have not been rated.
+Section E.5 reports an inventory-task qualitative sample and a post hoc census
+of ten failed inventories. Those studies do not constitute an audit of the
+common-prompt 21 co-alteration abstentions.
 
 \section{Prompt sensitivity and identification limits}
 
@@ -157,105 +159,103 @@ in initial fixed exposure, but only once in the later protocol.
 \item It explicitly includes eligible prognostic and N/A-therapy records.
 \end{enumerate}
 
-Exact initial and common instructions are disclosed in archival Sections C.4
-and D.1. The cross-protocol change is not an ablation of any individual edit and
-does not establish that a particular fraction of the earlier failure was caused
-by underspecification. It does show that the earlier low recovery rate is not
-stable across these formulations. The later fresh--repair comparison holds the
-common instruction fixed and addresses a different question.
+Exact initial and common instructions are disclosed in archival Sections C.4 and
+D.1. Because the protocol changes were bundled, the comparison cannot attribute
+the difference to an individual edit or quantify how much of the earlier failure
+came from underspecification. The recovery rate nevertheless differs
+substantially between the two formulations. The later fresh versus repair
+comparison holds the common instruction fixed and addresses a different
+question.
 
-Fresh receives no erroneous proposal or rejection feedback. Repair receives
-both as supplied assistant/tool history. This comparison changes the proposal,
+Fresh receives no erroneous proposal or rejection feedback. Repair receives both
+as supplied assistant/tool history. This comparison changes the proposal,
 feedback, message presentation, and input length as a package. Checklist and
 diagnostic \emph{feedback strings} are length-matched within the specified
-tolerance; fresh and repair \emph{total contexts} are not length-matched.
-Reset retains proposal and feedback content as user review material. The
-diagnostic reset and repair totals are both 43/64, but two case means improve,
-29 tie, and one worsens. Equal aggregate yields do not establish equivalence,
-identical behavior, or validity for naturally occurring errors.
+tolerance; fresh and repair \emph{total contexts} are not length-matched. Reset
+retains proposal and feedback content as user review material. The diagnostic
+reset and repair totals are both 43/64, but two case means improve, 29 tie, and
+one worsens. Equal aggregate yields do not establish equivalence, identical
+behavior, or validity for naturally occurring errors.
 
 Separating the components requires new controls, such as matched-length neutral
 context and proposal/feedback presence varied within a fixed presentation.
 Restarting after removing the rejected ID is a distinct operational policy:
-removing one of ten candidates also changes candidate count and input length.
-A matched removal of an unrelated ineligible candidate would help distinguish
-rejected-ID removal from generic distractor reduction. These controls have not
-been run in this update. Natural-error continuations and model-version
-replications likewise remain separate research questions.
+removing one of ten candidates also changes candidate count and input length. A
+matched removal of an unrelated ineligible candidate would help distinguish
+rejected-ID removal from generic distractor reduction. We have not run these
+controls, tested continuations after naturally occurring errors, or replicated
+the study across model versions in this update.
 
-The common-prompt analysis was frozen locally before its generation, after the
-earlier fixed-exposure results were known. Cases and payloads were reused.
+We froze the common-prompt analysis locally before generating its outputs, after
+seeing the earlier fixed-exposure results. We reused cases and payloads.
 Prespecification therefore concerns the subsequent execution and primary
 contrast, not outcome-independent selection of the research question or an
 independent case sample. The model is one unversioned alias. Shared publications
 connect all 45 positives into one component; variant-cluster intervals do not
-separately account for that dependence. Their coverage for generalization to
-new publication families is not established. A single connected component cannot
-supply an informative independent-component bootstrap. These limitations are
-not removed by additional repetitions on the same cases.
+separately account for that dependence. Their coverage for generalization to new
+publication families is not established. A single connected component cannot
+supply an informative independent-component bootstrap. Additional repetitions on
+the same cases do not resolve these limitations.
 
 \section{Deterministic preservation and the interpretation boundary}
 
 Let $R$ be the deduplicated records acquired on a saved search path, $P$ the
 encoded eligibility predicate, and $G$ the full eligible reference set under
-that predicate. Serialization emits
-\[
-S=\{r\in R:P(r)\}=R\cap G.
-\]
-When identifier handling and field copying conform to the frozen contract,
-serialized recall therefore equals retrieved recall by construction. The
-empirical observation is the gap between that available eligible pool and the
-LLM's final inventory, not the identity itself.
+that predicate. Serialization emits \[ S=\{r\in R:P(r)\}=R\cap G. \] When
+identifier handling and field copying conform to the frozen contract, serialized
+recall therefore equals retrieved recall by construction. The empirical result
+is the gap between the available eligible pool and the LLM's final inventory;
+the identity itself follows from the serialization rule.
 
 On iterative scope-first paths, the LLM retains 847 of 975 available eligible
 record exposures and omits at least one eligible record in 29/81 positive
-trajectories. The difference of 128 counts per-trajectory unique identifiers,
-including identifiers recurring across trajectories; it is not 128 distinct
-corpus records. Case-macro retrieved and final inventory recall are 67.216\%
-and 60.302\%, respectively. Their paired difference is 6.914 points, whereas
-$847/975$ is pooled retention and uses a different denominator. Original
-generation has a 4,096-token response cap with no observed truncations;
+trajectories. The 128 omitted exposures count unique identifiers within each
+trajectory. An identifier can recur across trajectories, so this count does not
+represent 128 distinct corpus records. Case-macro retrieved and final inventory
+recall are 67.216\% and 60.302\%, respectively. Their paired difference is 6.914
+points, whereas $847/975$ is pooled retention and uses a different denominator.
+Original generation has a 4,096-token response cap with no observed truncations;
 serialization is uncapped. The replay fixes saved retrieval and changes
 finalization under these output constraints.
 
-An LLM is not required to decide inventory membership when that membership is
-fully computable. Deterministic selection and copying provide a direct baseline
-for preserving acquired records. Search formulation and source-level
+When inventory membership is fully computable, deterministic selection and
+copying can preserve acquired records without an LLM. This procedure provides a
+direct baseline for finalization. Search formulation and source-level
 interpretation are possible LLM roles, but this replay does not establish their
 necessity, superiority, or clinical benefit. Full-corpus enumeration reaches
 100\% encoded recall by construction, without establishing publication-level
 validity.
 
-The checker and reference labels share frozen curation. Agreement establishes
-conformance to that task rather than independent support from the publications.
-W04 illustrates this boundary through observations tied to different genotypes
-and experimental models. It is one example within an exploratory twelve-family
-review, not an estimate of corpus error or validation of the repair effect.
-Two medical-student readers used substantive AI assistance and nonblinded joint
-adjudication; the separate thirty-pair independent review was discontinued
-without completed judgments. No workflow study measured review time or decision
-quality. Preservation and source interpretation remain separate evaluation targets.
+The checker and reference labels use the same frozen curation. Agreement
+therefore establishes conformance to the encoded task, but independent
+publication support still requires source review. W04 illustrates this boundary
+through observations tied to different genotypes and experimental models. It is
+one example within an exploratory twelve-family review, not an estimate of
+corpus error or validation of the repair effect. Two medical-student readers
+used substantive AI assistance and nonblinded joint adjudication; the separate
+thirty-pair independent review was discontinued without completed judgments. No
+workflow study measured review time or decision quality. Preservation and source
+interpretation remain separate evaluation targets.
 
 \section{Related-work navigation and reproducibility}
 
-The archival related-work section is B.6 (combined PDF page 12). It groups evidence
-use/revision, qualified matching/retrieval, and record preservation/workflow
-scope. The original bibliography is on PDF page 2. This navigation makes existing
-material accessible; it does not add a new literature review or change the
-submitted main text. Historical code/version names in archival pages identify
-provenance; the study map in S1 provides descriptive names for reading the results.
+Related work appears in Section B.6 (combined PDF page 12), covering evidence
+use and revision, qualified matching and retrieval, and record preservation
+and workflow scope. The bibliography is on PDF page 2. Section S1 summarizes
+how the studies relate to one another.
 
 The repository provides \texttt{data/paired\_outcomes.csv} and
 \texttt{source/analyze.py} to reproduce the S2 counts. Each row is a case and
 repetition with fresh and diagnostic-repair terminal labels. The file contains
 90 pairs (180 outputs) and does not include licensed candidate text or full
-responses. It permits reaggregation of exported labels, not independent
-response regrading. Original response scoring is described in archival D.2--D.3.
+responses. Readers can recompute counts from these labels, but independently
+regrading responses would require the underlying records and outputs. Original
+response scoring is described in archival D.2 to D.3.
 
 \texttt{source/build.py} compiles this addendum and the navigation cover, combines
 them with the unchanged archival body, clears identifying PDF metadata, and
 checks rendered page equality for that body. The unchanged original supplement
 is retained in \texttt{archive/}. Verification records include artifact hashes
-and outcome-accounting checks. The addendum provides clarification and
-descriptive reanalysis, not a replacement for the original primary analysis.
+and outcome-accounting checks. The original primary analysis remains the basis for inference; this addendum
+explains its scope and provides a descriptive reanalysis.
 \end{document}
