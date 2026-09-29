@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "0c73972904defcb68b79dedc5f505b9166c5bb8b75c3202c52dcf5bbcae95ef1",
+  "extended_pdf_sha256": "e800b9031d997a5ab2a46ba00711c2a5f5ef9d1fd913d40c68a4405ccbcbcfc6",
+  "addendum_pdf_sha256": "b17946c1050ad934a51d02f847d64bad62a614ca24f1cee05be9bc3e54757c06",
+  "combined_pages": 37,
+  "addendum_pages": 5,
+  "addendum_starts_at_pdf_page": 33,
+  "archival_body_pages_render_and_text_equal": 31,
+  "identifying_pdf_metadata_empty": true,
+  "embedded_files": 0,
+  "paired_data_sha256": "5a4f11c201696f82a72c6c5b746acda2195ed39b13cc1fd1060503fb4d0463d1",
+  "new_model_calls": 0
+}

@@ -1,0 +1,61 @@
+{
+  "status": "Post hoc descriptive reaggregation of existing terminal labels",
+  "data_sha256": "5a4f11c201696f82a72c6c5b746acda2195ed39b13cc1fd1060503fb4d0463d1",
+  "pairing": "Case and repetition index; separate generations, not a within-run intervention",
+  "results": {
+    "compound_unmet": {
+      "cases": 32,
+      "pairs": 64,
+      "transitions": [
+        {
+          "fresh": "abstain",
+          "diagnostic_repair": "abstain",
+          "count": 8
+        },
+        {
+          "fresh": "invalid",
+          "diagnostic_repair": "valid",
+          "count": 2
+        },
+        {
+          "fresh": "valid",
+          "diagnostic_repair": "abstain",
+          "count": 13
+        },
+        {
+          "fresh": "valid",
+          "diagnostic_repair": "valid",
+          "count": 41
+        }
+      ]
+    },
+    "sibling_disease": {
+      "cases": 13,
+      "pairs": 26,
+      "transitions": [
+        {
+          "fresh": "abstain",
+          "diagnostic_repair": "abstain",
+          "count": 2
+        },
+        {
+          "fresh": "schema_failure",
+          "diagnostic_repair": "abstain",
+          "count": 1
+        },
+        {
+          "fresh": "valid",
+          "diagnostic_repair": "abstain",
+          "count": 19
+        },
+        {
+          "fresh": "valid",
+          "diagnostic_repair": "valid",
+          "count": 4
+        }
+      ]
+    }
+  },
+  "qualitative_census_completed": false,
+  "new_model_calls": 0
+}
